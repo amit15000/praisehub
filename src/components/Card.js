@@ -15,13 +15,14 @@ function Card(props) {
         </div>
       </div>
       <div className=" text-center mt-7 ">
-        <p className=" font-bold text-2xl capitalize">{review.name}</p>
-      </div>
-      <div className=" text-center mt-7 ">
+        <p className=" tracking-wider font-bold text-2xl capitalize">
+          {review.name}
+        </p>
         <p className=" text-violet-300 uppercase text-small">
           {review.designation}
         </p>
       </div>
+
       <div className=" flex flex-col items-center">
         <div className=" text-violet-400 mt-5 ">
           <FaQuoteLeft></FaQuoteLeft>

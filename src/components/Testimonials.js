@@ -24,7 +24,7 @@ function Testimonials(props) {
     setIndex(randomIndex);
   };
   return (
-    <div>
+    <div className="w-[85vw] md:2-[700px] bg-white flex flex-col justify-center items-center mt-10 p-10 transition-all duration-700 hover:shadow-xl rounded-lg">
       <Card review={reviews[index]}></Card>
       <div className="text-violet-400 font-bold gap-3 text-3xl">
         <button
