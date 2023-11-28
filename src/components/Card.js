@@ -4,8 +4,14 @@ function Card(props) {
   let review = props.review;
   return (
     <div>
-      <div>
-        <img src={review.profilePicture} alt="profile_picture"></img>
+      <div className=" flex flex-col md:relative">
+        <div className=" absolute top-[-7rem] z-10 mx-auto ">
+          <img
+            className=" aspect-square rounded-full w-[140px] h-[140px] z-25 "
+            src={review.profilePicture}
+            alt="profile_picture"
+          ></img>
+        </div>
       </div>
       <div>
         <p>{review.name}</p>
