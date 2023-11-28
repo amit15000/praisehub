@@ -11,30 +11,25 @@ function Card(props) {
             src={review.profilePicture}
             alt="profile_picture"
           ></img>
+          <div className="w-[140px] h-[140px] bg-violet-500 rounded-full absolute top-[-6px] z-[-20] left-[10px] "></div>
         </div>
       </div>
-      <div>
-        <p>{review.name}</p>
+      <div className=" text-center mt-7 ">
+        <p className=" font-bold text-2xl capitalize">{review.name}</p>
       </div>
-      <div>
-        <p>{review.designation}</p>
+      <div className=" text-center mt-7 ">
+        <p className=" text-violet-300 uppercase text-small">
+          {review.designation}
+        </p>
       </div>
-      <div>
-        <p>{review.designation}</p>
-      </div>
-      <div>
-        <FaQuoteLeft></FaQuoteLeft>
-      </div>
-      <div>{review.comment}</div>
-      <div>
-        <FaQuoteRight></FaQuoteRight>
-      </div>
-      <div>
-        <button>-</button>
-        <button>+</button>
-      </div>
-      <div>
-        <button>Surprise Me</button>
+      <div className=" flex flex-col items-center">
+        <div className=" text-violet-400 mt-5 ">
+          <FaQuoteLeft></FaQuoteLeft>
+        </div>
+        <div className="text-slate-500">{review.comment}</div>
+        <div className=" text-violet-400   mt-5 ">
+          <FaQuoteRight></FaQuoteRight>
+        </div>
       </div>
     </div>
   );
